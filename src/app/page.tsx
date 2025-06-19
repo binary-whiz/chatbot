@@ -158,8 +158,21 @@ export default function ChatBotUI() {
 
   return (
     <div className="relative flex flex-col max-w-md mx-auto p-4 h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100">
-      <div className="flex justify-center items-center mb-4">
-        <h1 className="text-xl font-bold text-center">ChatBot UI</h1>
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-xl font-bold text-center">ChatBot UI H</h1>
+        <Button
+          variant="ghost"
+          size="sm"
+          className="text-xs"
+          onClick={() => {
+            localStorage.removeItem('chatMessages');
+            setMessages([]);
+            setPdfText('');
+            setFileName(null);
+          }}
+        >
+          Clear Chat
+        </Button>
       </div>
 
       <ScrollArea className="flex-1 overflow-auto space-y-2 mb-2 pr-2">
