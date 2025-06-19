@@ -159,7 +159,7 @@ export default function ChatBotUI() {
   return (
     <div className="relative flex flex-col max-w-md mx-auto p-4 h-screen bg-gradient-to-br from-purple-100 via-pink-100 to-blue-100">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-xl font-bold text-center">ChatBot UI H</h1>
+        <h1 className="text-xl font-bold text-center">ChatBot</h1>
         <Button
           variant="ghost"
           size="sm"
